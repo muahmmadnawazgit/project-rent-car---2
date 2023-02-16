@@ -1,0 +1,2814 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    --main-color: rgb(248, 105, 9);
+    --second-color: rgb(255, 153, 0);
+    --text-color: rgb(44, 41, 41);
+    --gradient: linear-gradient(rgb(248, 105, 9), rgb(255, 153, 0));
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 10px;
+
+}
+
+
+/*navbar*/
+header {
+    background: rgb(202, 199, 199);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 13px;
+    padding-top: 10px;
+
+}
+
+header .img {
+    width: 45px;
+    height: 40px;
+    margin-left: 7px;
+    padding-top: 7px;
+}
+
+#menu-icon {
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    display: none;
+}
+
+.navbar-menu {
+    display: flex;
+
+}
+
+.navbar-menu li {
+    position: relative;
+
+
+}
+
+.navbar-menu li a {
+    color: var(--text-color);
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.navbar .navbar-icon .bx {
+    font-size: 20px;
+
+}
+
+.navbar .navbar-menu a::after {
+    content: '';
+    background-color: var(--main-color);
+    width: 0;
+    height: 3px;
+    border-radius: 2px;
+    bottom: -5px;
+    left: 0;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.navbar-menu a:hover::after {
+    width: 100%;
+}
+
+header .box {
+    margin-right: 10px;
+    padding-top: 10px;
+    justify-content: center;
+    margin-top: 3px;
+
+
+}
+
+header .box .logout {
+    padding: 7px 20px !important;
+    background: rgb(46, 24, 146);
+    color: #fff;
+    border-radius: 10px;
+    overflow: visible !important;
+}
+
+header .box .logout:hover {
+    background: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+
+header .box .Sign-up {
+    color: var(--text-color);
+    padding: 7px 20px;
+}
+
+header .box .Sign-up:hover {
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    padding: 7px 20px;
+    border-radius: 13px;
+    cursor: pointer;
+
+}
+
+/*message*/
+/*message*/
+/*message*/
+#home .main .message {
+    width: 400px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.message h4 {
+    background: var(--gradient);
+    color: white;
+    word-spacing: 4px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/*main*/
+#home {
+    overflow-x: hidden;
+}
+
+#home .main {
+    background: url('../img/main.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/*home*/
+.main .text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+
+}
+
+.main .text img {
+    width: 100px;
+    height: 30px;
+}
+
+.main .text h1 {
+    font-size: 45px;
+
+
+}
+
+.main .text h1 span {
+    color: var(--main-color);
+
+
+}
+
+.main .text p {
+    font-size: 17px;
+    padding: 10px;
+    padding-left: 0;
+
+}
+
+.main-form {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 16px;
+    justify-content: space-between;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    background: #fff;
+    padding: 20px 65px;
+    border-radius: 10px;
+}
+
+.main-form .box p {
+    padding-bottom: 7px;
+    font-size: 18px;
+}
+
+.main-form .box input {
+    background: rgb(216, 214, 214);
+    padding: 7px 20px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+.main-form .btn {
+    justify-content: center;
+    margin: auto;
+    margin-left: 10px;
+}
+
+.main-form .btn .btn-submit {
+    background: rgb(46, 24, 146);
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 7px;
+
+}
+
+.main-form .btn .btn-submit:hover {
+    background: var(--main-color);
+    color: white;
+
+}
+
+/*ride*/
+
+
+
+#ride {
+    padding-top: 5px;
+    background: rgb(240, 237, 237);
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+}
+
+.header {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+
+}
+
+.header h2 {
+    padding: 15px;
+    padding-bottom: 3px;
+    padding-top: 5px;
+
+}
+
+.header p {
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+#header {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    padding-top: 1px;
+
+
+}
+
+#header h2 {
+    padding: 15px;
+    padding-bottom: 3px;
+    padding-top: 5px;
+
+}
+
+#header p {
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.main-container .content {
+    text-align: center;
+    padding: 30px 30px;
+    background: #fff;
+    margin: 40px 20px;
+
+}
+
+.main-container .content:hover {
+    box-shadow: 2px 3px 4px rgb(248, 105, 9);
+    transition: 0.2s;
+}
+
+.main-container .content .bx:hover {
+    background: rgb(248, 105, 9);
+    color: white;
+    transition: 0.2s;
+
+}
+
+.main-container .content .bx {
+    font-size: 45px;
+    color: rgb(248, 105, 9);
+    border-radius: 7px;
+    padding: 10px 10px;
+    margin: 10px;
+    background: rgb(199, 196, 196);
+
+}
+
+.content h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 800;
+
+}
+
+.content p {
+    font-weight: 300;
+    font-size: 1rem;
+    word-spacing: 2px;
+}
+
+
+
+/*book car*/
+/*book car*/
+/*book car*/
+/*book car*/
+
+
+
+#Book-Car {
+    background: rgb(240, 237, 237);
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+#Book-Car h2 {
+    color: black;
+    margin-bottom: 30px;
+
+
+}
+
+
+
+
+.container {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/cars.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 400px;
+    padding-top: 50px;
+}
+
+.form-booking {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    width: 700px;
+    height: 320px;
+    color: white;
+    position: relative;
+    left: 300px;
+    top: 0px;
+
+}
+
+.form-booking h3 {
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+form {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: 120px;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.form-group label {
+    position: relative;
+    left: -48px;
+
+
+
+}
+
+input {
+    border: none;
+    outline: none;
+    background: silver;
+    width: 200px;
+    font-size: 17px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 7px 0px;
+
+
+}
+
+.form-booking form #submit {
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    margin-top: 15px;
+    height: 34px;
+
+}
+
+.form-booking form #submit:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+
+
+/* form report */
+/* form report */
+/* form report */
+/* form report */
+#report {
+    background: black;
+    color: white;
+    width: auto;
+    height: 520px;
+    overflow: hidden;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.address {
+    width: 600px;
+}
+
+.address h3 {
+    word-spacing: 5px;
+    font-size: 35px;
+}
+
+.address address {
+    margin-top: 40px;
+    word-spacing: 5px;
+    font-size: 18px;
+
+}
+
+.address .icons {
+    margin-top: 30px;
+    word-spacing: 15px;
+    padding-right: 25px;
+}
+
+.address .icons .fa-brands {
+    font-size: 40px;
+    color: var(--main-color);
+    cursor: pointer;
+
+}
+
+.address .icons .fa-brands:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+/*form*/
+.report-form {
+    background: var(--main-color);
+    background-size: cover;
+    width: 450px;
+    height: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 20px;
+
+}
+
+.report-form form label {
+    margin: 5px 0px;
+    color: white
+}
+
+.report-form form input {
+    border: none;
+    outline: none;
+    width: 400px;
+    height: 35px;
+    font-size: 17px;
+    background: white;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.report-form form input:focus {
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px solid var(--main-color);
+}
+
+.report-form form textarea {
+    border: none;
+    outline: none;
+    font-size: 17px;
+    background: white;
+    border-radius: 5px;
+}
+
+.report-form form #submit {
+    color: black;
+    background-color: white;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    outline: None;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.report-form form #submit:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+
+
+}
+
+
+
+/*services*/
+/*services*/
+/*services*/
+/*services*/
+#services {
+    margin-top: 80px;
+
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 10px;
+    gap: 1rem;
+}
+
+.services-container .box {
+    background: rgb(241, 241, 241);
+    padding: 10px;
+    padding-bottom: 30px;
+    margin: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.services-container .box:hover {
+    box-shadow: 2px 2px 3px var(--second-color);
+    transition: 0.2s;
+}
+
+.services-container .box .box-image {
+    width: 100%;
+    height: 200px;
+
+}
+
+.services-container .box .box-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+    object-position: center;
+    border-radius: 1rem;
+
+}
+
+.services-container .box p {
+    border: 1px solid var(--text-color);
+    margin-top: 20px;
+    padding: 0 10px;
+    width: 53px;
+    border-radius: 8px;
+
+}
+
+.services-container .box h2 {
+    color: var(--main-color);
+    padding: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+.services-container .box h2 span {
+    color: grey;
+    font-size: 17px;
+}
+
+.services-container .box h3 {
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.services-container .box a {
+    background: rgb(46, 24, 146);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+    color: #fff;
+    border-radius: 10px;
+}
+
+.services-container .box a:hover {
+    background: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+
+/*about*/
+#about {
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.about-container .about-img {
+    width: 400px;
+    height: 300px;
+
+}
+
+.about-container img {
+    width: 425px;
+    height: 300px;
+}
+
+.about-container .text {
+    margin-left: 10px;
+    justify-content: start;
+    padding: 20px;
+}
+
+.about-container h4 {
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 18px;
+    word-spacing: 1px;
+}
+
+.about-container #p02 {
+    padding-top: 20px;
+    font-size: 18px;
+    word-spacing: 1px;
+
+
+}
+
+.about-container .about-btn {
+    margin-top: 30px;
+
+}
+
+.about-container .about-btn a {
+    background: rgb(46, 24, 146);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+}
+
+.about-container .about-btn a:hover {
+    background: var(--main-color);
+    color: white;
+}
+
+/*@media*/
+/*@media*/
+/*@media*/
+/*@media*/
+/*@media*/
+/*@media*/
+
+
+@media(max-width:1144px) {
+
+    .content-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+
+    .address {
+        width: 500px;
+    }
+
+    .address h3 {
+        word-spacing: 5px;
+        font-size: 35px;
+    }
+
+    .address address {
+        margin-top: 40px;
+        word-spacing: 5px;
+        font-size: 18px;
+
+    }
+
+    .address .icons {
+        margin-top: 30px;
+        word-spacing: 15px;
+        padding-right: 25px;
+    }
+
+    .address .icons .fa-brands {
+        font-size: 40px;
+        color: var(--main-color);
+        cursor: pointer;
+
+    }
+
+    .address .icons .fa-brands:hover {
+        cursor: pointer;
+        color: blue;
+    }
+
+    /*form*/
+    .report-form {
+        background: var(--main-color);
+        background-size: cover;
+        width: 450px;
+        height: 420px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 10px;
+        padding: 15px;
+        padding-left: 20px;
+
+    }
+
+    .report-form form label {
+        margin: 5px 0px;
+        color: white
+    }
+
+    .report-form form input {
+        border: none;
+        outline: none;
+        width: 400px;
+        height: 35px;
+        font-size: 17px;
+        background: white;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+    .report-form form input:focus {
+        border: none;
+        outline: none;
+        box-shadow: 5px 5px solid var(--main-color);
+    }
+
+    .report-form form textarea {
+        border: none;
+        outline: none;
+        font-size: 17px;
+        background: white;
+        border-radius: 5px;
+    }
+
+    .report-form form #submit {
+        color: black;
+        background-color: white;
+        height: 40px;
+        font-size: 18px;
+        border: none;
+        outline: None;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .report-form form #submit:hover {
+        cursor: pointer;
+        border: 2px solid white;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+
+
+    }
+}
+
+@media(max-width:1023px) {
+    .main-form {
+        gap: 8px;
+        position: absolute;
+        top: 79%;
+        left: 5%;
+        padding: 15px 15px;
+
+    }
+
+    .main-form .box input {
+
+        padding: 7px 20px;
+        font-size: 16px;
+
+    }
+
+    /*book car*/
+    /*book car*/
+
+    .container {
+        padding-top: 50px;
+
+    }
+
+    .form-booking {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        width: 600px;
+        height: 320px;
+        color: white;
+        position: relative;
+        left: 200px;
+        top: 0px;
+
+    }
+
+    .form-booking h3 {
+        padding-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .form-booking h3 {
+        padding-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .form-booking h3 {
+        padding-top: 10px;
+        margin-bottom: 15px
+    }
+
+    form {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        column-gap: 100px;
+        justify-content: space-between;
+        position: relative;
+
+    }
+
+    .form-group label {
+        position: relative;
+        left: -48px;
+
+
+
+    }
+
+    input {
+        border: none;
+        outline: none;
+        background: silver;
+        width: 200px;
+        font-size: 17px;
+        height: 30px;
+        border-radius: 5px;
+        margin: 7px 0px;
+
+
+    }
+
+    .form-booking form #submit {
+        cursor: pointer;
+        border: 2px solid white;
+        border-radius: 5px;
+        background: none;
+        color: white;
+        margin-top: 15px;
+        height: 34px;
+
+    }
+
+    .form-booking form #submit:hover {
+        background: white;
+        color: black;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    /*report*/
+    /*report*/
+    /*report*/
+    /*report*/
+    /*report*/
+
+    .content-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+
+    .address {
+        width: 430px;
+    }
+
+    .address h3 {
+        word-spacing: 5px;
+        font-size: 35px;
+    }
+
+    .address address {
+        margin-top: 40px;
+        word-spacing: 5px;
+        font-size: 18px;
+
+    }
+
+    .address .icons {
+        margin-top: 30px;
+        word-spacing: 15px;
+        padding-right: 25px;
+        margin-left: 20px;
+    }
+
+    .address .icons .fa-brands {
+        font-size: 30px;
+        color: var(--main-color);
+        cursor: pointer;
+
+    }
+
+    .address .icons .fa-brands:hover {
+        cursor: pointer;
+        color: blue;
+    }
+
+    /*form*/
+    .report-form {
+        width: 400px;
+        height: 420px;
+
+    }
+
+    .report-form form label {
+        margin: 5px 0px;
+    }
+
+    .report-form form input {
+        width: 350px;
+        height: 35px;
+    }
+
+    .report-form form input:focus {
+        box-shadow: 5px 5px solid var(--main-color);
+    }
+
+    .report-form form textarea {
+        font-size: 17px;
+    }
+
+    .report-form form #submit {
+        height: 40px;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    .report-form form #submit:hover {
+        font-size: 18px;
+
+
+    }
+
+
+}
+
+.main-form .btn .btn-submit {
+
+    font-size: 18px;
+
+
+}
+
+
+
+/*907*/
+@media(max-width:907px) {
+    .main-container {
+        gap: 10px;
+    }
+
+    .main .text h1 {
+        font-size: 40px;
+
+
+    }
+
+    .main .text p {
+        font-size: 15px;
+        font-weight: 501;
+
+
+    }
+
+    .main-container .content {
+
+        padding: 10px 20px;
+        margin: 40px 20px;
+
+    }
+
+    .main-container .content .bx {
+        font-size: 40px;
+        padding: 5px 5px;
+        margin: 5px;
+
+    }
+
+    .navbar-menu li a {
+
+
+        font-weight: 15px;
+
+    }
+
+    .content h3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 600;
+        font-size: 22px;
+
+    }
+
+    .content p {
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .services-container {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        justify-content: space-around;
+        margin-top: 10px;
+        gap: 14px;
+    }
+
+    .services-container .box {
+        width: 325px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .services-container .box .box-image {
+        width: 300px;
+        height: 200px;
+
+    }
+
+    .services-container .box p {
+        border: 1px solid var(--text-color);
+        margin-top: 10px;
+        margin-left: 4px;
+        padding: 0 7px;
+        font-size: 16px;
+        width: 47px;
+        border-radius: 5px;
+
+    }
+
+    .services-container .box h2 {
+
+        font-size: 22px;
+
+
+    }
+
+    .services-container .box h2 span {
+        color: grey;
+        font-size: 17px;
+    }
+
+    .services-container .box h3 {
+        padding: 10px;
+        padding-bottom: 0;
+        font-size: 18px;
+    }
+
+    .services-container .box a {
+        padding: 7px;
+        border-radius: 10px;
+    }
+
+    /*book car*/
+    /*book car*/
+
+    .container {
+        padding-top: 50px;
+        margin-left: 30px
+    }
+
+    .form-booking {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        width: 600px;
+        height: 310px;
+        color: white;
+        position: relative;
+        left: 100px;
+        top: 0px;
+
+    }
+
+    .form-booking h3 {
+        padding-top: 10px;
+        margin-bottom: 15px
+    }
+
+    form {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        column-gap: 100px;
+        justify-content: space-between;
+        position: relative;
+
+    }
+
+    .form-group label {
+        position: relative;
+        left: -48px;
+
+
+
+    }
+
+    input {
+        border: none;
+        outline: none;
+        background: silver;
+        width: 200px;
+        font-size: 17px;
+        height: 30px;
+        border-radius: 5px;
+        margin: 7px 0px;
+
+
+    }
+
+    /*report*/
+    /*report*/
+    /*report*/
+    /*report*/
+    /*report*/
+
+    .content-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+
+    .address {
+        width: 380px;
+    }
+
+    .address h3 {
+        word-spacing: 5px;
+        font-size: 30px;
+    }
+
+}
+
+@media(max-width:830px) {
+    /*book car*/
+    /*book car*/
+
+    .container {
+        padding-top: 50px;
+        margin-left: 30px;
+    }
+
+    .form-booking {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        width: 500px;
+        height: 310px;
+        color: white;
+        position: relative;
+        left: 100px;
+        top: 0px;
+
+    }
+
+    .form-booking h3 {
+        padding-top: 10px;
+        margin-bottom: 15px
+    }
+
+    form {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        column-gap: 80px;
+        justify-content: space-between;
+        position: relative;
+
+    }
+
+    .form-group label {
+        position: relative;
+        left: -13px;
+
+
+
+    }
+
+    input {
+        border: none;
+        outline: none;
+        background: silver;
+        width: 150px;
+        font-size: 16px;
+        height: 30px;
+        border-radius: 5px;
+        margin: 7px 0px;
+    }
+
+    /*report*/
+    /*report*/
+    /*report*/
+    /*report*/
+    /*report*/
+
+    .content-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+
+    .address {
+        width: 380px;
+    }
+
+    .address h3 {
+        word-spacing: 5px;
+        font-size: 27px;
+    }
+
+    .address address {
+        margin-top: 40px;
+        word-spacing: 5px;
+        font-size: 18px;
+
+    }
+
+    .address .icons {
+        margin-top: 30px;
+        word-spacing: 15px;
+        padding-right: 25px;
+        margin-left: 20px;
+    }
+
+    .address .icons .fa-brands {
+        font-size: 30px;
+        color: var(--main-color);
+        cursor: pointer;
+
+    }
+
+    .address .icons .fa-brands:hover {
+        cursor: pointer;
+        color: blue;
+    }
+
+    /*form*/
+    .report-form {
+        width: 340px;
+        height: 420px;
+
+    }
+
+    .report-form form label {
+        margin: 5px 0px;
+    }
+
+    .report-form form input {
+        width: 290px;
+        height: 35px;
+    }
+
+
+}
+
+
+/*771*/
+@media(max-width:771px) {
+    .main-form {
+        gap: 7px;
+        position: absolute;
+        top: 75%;
+        left: 3%;
+        padding: 10px 10px;
+
+    }
+
+    .main-form .box input {
+
+        padding: 7px 14px;
+        font-size: 16px;
+
+    }
+
+    .main-form .btn .btn-submit {
+
+        font-size: 17px;
+
+
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        margin-top: 20px;
+
+    }
+
+    .main-container {
+        gap: 10px;
+        row-gap: 5px;
+    }
+
+    .main .text h1 {
+        font-size: 35px;
+
+
+    }
+
+    .main .text p {
+        font-size: 15px;
+        font-weight: 700;
+
+
+    }
+
+    .main-container .content {
+
+        padding: 8px 17px;
+        margin: 40px 20px;
+
+    }
+
+    .main-container .content .bx {
+        font-size: 25px;
+        padding: 5px 5px;
+        margin: 3px;
+
+    }
+
+    .content h3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 600;
+        font-size: 22px;
+
+    }
+
+    .content p {
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .services-container {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        justify-content: space-around;
+        margin-top: 10px;
+        gap: 13px;
+    }
+
+    .services-container .box {
+        width: 310px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .services-container .box .box-image {
+        width: 290px;
+        height: 200px;
+
+    }
+
+    .services-container .box p {
+        border: 1px solid var(--text-color);
+        margin-top: 10px;
+        margin-left: 4px;
+        padding: 0 7px;
+        font-size: 16px;
+        width: 47px;
+        border-radius: 5px;
+
+    }
+
+    .services-container .box h2 {
+
+        font-size: 22px;
+
+
+    }
+
+    .services-container .box h2 span {
+        color: grey;
+        font-size: 17px;
+    }
+
+    .services-container .box h3 {
+        padding: 10px;
+        padding-bottom: 0;
+        font-size: 18px;
+    }
+
+    .services-container .box a {
+        padding: 7px;
+        border-radius: 10px;
+    }
+
+    .reviews-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+
+
+    }
+
+    /*about*/
+
+    .about-container {
+        display: grid;
+        grid-template-columns: auto;
+        order: 2;
+    }
+
+    .about-container .about-img {
+
+        margin: auto;
+
+
+    }
+
+    .about-container img {
+        width: 410px;
+        height: 300px;
+    }
+
+    .about-container .text {
+        margin-left: 10px;
+        justify-content: start;
+        padding: 20px;
+    }
+
+    .about-container h4 {
+        color: var(--main-color);
+        margin-bottom: 20px;
+    }
+
+    .about-container p {
+        font-size: 16px;
+
+    }
+
+    .about-container #p02 {
+        padding-top: 15px;
+        font-size: 16px;
+
+
+
+    }
+
+    .about-container .about-btn {
+        margin-top: 20px;
+
+    }
+
+    .about-container .about-btn a {
+        padding: 7px 15px;
+        border-radius: 7px;
+    }
+
+    .about-container .about-btn a:hover {
+        background: var(--main-color);
+        color: white;
+    }
+
+    /*book car*/
+    /*book car*/
+
+    .container {
+        padding-top: 50px;
+        margin-left: 30px;
+    }
+
+    .form-booking {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        width: 500px;
+        height: 310px;
+        color: white;
+        position: relative;
+        left: 100px;
+        top: 0px;
+
+    }
+
+    .form-booking h3 {
+        padding-top: 10px;
+        margin-bottom: 15px
+    }
+
+    form {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        column-gap: 100px;
+        justify-content: space-between;
+        position: relative;
+
+    }
+
+    .form-group label {
+        position: relative;
+        left: -13px;
+
+
+
+    }
+
+    input {
+        border: none;
+        outline: none;
+        background: silver;
+        width: 150px;
+        font-size: 16px;
+        height: 30px;
+        border-radius: 5px;
+        margin: 7px 0px;
+
+
+    }
+
+    /*report*/
+    /*report*/
+
+    .content-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+
+    .address {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    .address .icons {
+        margin-top: 30px;
+        word-spacing: 15px;
+        padding-right: 25px;
+        margin-left: 20px;
+    }
+
+    .address .icons .fa-brands {
+        font-size: 30px;
+        color: var(--main-color);
+        cursor: pointer;
+
+    }
+
+    .address .icons .fa-brands:hover {
+        cursor: pointer;
+        color: blue;
+    }
+
+    /*form*/
+    .report-form {
+        width: 340px;
+        height: 420px;
+
+    }
+
+    .report-form form label {
+        margin: 5px 0px;
+    }
+
+    .report-form form input {
+        width: 290px;
+        height: 35px;
+    }
+
+
+}
+
+
+
+/*695*/
+@media(max-width:695px) {
+    header {
+        padding-bottom: 7px;
+        padding-top: 7px;
+
+    }
+
+    header .img {
+        width: 45px;
+        height: 40px;
+        margin-left: 7px;
+        padding-top: 7px;
+    }
+
+
+    .navbar-menu li a {
+        padding: 7px 10px;
+        font-size: 15px;
+
+    }
+
+    header .box {
+        padding-top: 2px;
+        margin-top: 0;
+
+
+    }
+
+    header .box .Sign-In {
+        padding: 7px 16px;
+        border-radius: 7px;
+        font-size: 14px;
+
+    }
+
+    header .box .Sign-up {
+        color: var(--text-color);
+        padding: 7px 16px;
+        font-size: 14px;
+    }
+
+    header .box .Sign-up:hover {
+        padding: 7px 16px;
+        border-radius: 7px;
+
+
+
+
+    }
+
+    .navbar .navbar-menu a::after {
+        content: '';
+        background-color: var(--main-color);
+        width: 0;
+        height: 2px;
+        border-radius: 2px;
+        bottom: -4px;
+        left: 0;
+        position: absolute;
+        transition: 0.5s;
+    }
+
+    .navbar-menu a:hover::after {
+        width: 100%;
+    }
+
+
+
+    .message {
+        width: 300px;
+    }
+
+
+
+    /*FORM*/
+    .main-form {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 5px;
+        column-gap: 16px;
+        position: absolute;
+        top: 68%;
+        left: 15%;
+        padding: 20px 15px;
+
+    }
+
+    .main-form .box input {
+
+        padding: 10px 16px;
+        font-size: 16px;
+        border-radius: 5px;
+
+    }
+
+    .main-form .btn {
+        margin-top: 40px;
+    }
+
+    .main-form .btn .btn-submit {
+        font-size: 18px;
+        margin: auto;
+        padding: 8px 20px;
+        row-gap: 10px;
+
+
+    }
+
+    .main .text {
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        transform: translateY(-45%);
+
+    }
+
+    .main .text img {
+        width: 80px;
+        height: 30px;
+    }
+
+    .main .text h1 {
+        font-size: 35px;
+
+
+    }
+
+    .main .text h1 span {
+        color: var(--main-color);
+
+
+    }
+
+    .main .text p {
+        font-size: 12px;
+        padding: 10px;
+        padding-left: 0;
+
+    }
+
+    /*services*/
+
+    .services-container {
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 10px;
+        gap: 10px
+    }
+
+
+    .services-container .box {
+        width: 400px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+
+    }
+
+    .services-container .box .box-image {
+        width: 350px;
+        height: 200px;
+        padding-left: 20px;
+
+    }
+
+    .services-container .box p {
+
+        margin-top: 10px;
+        margin-left: 4px;
+        padding: 0 7px;
+        font-size: 14px;
+        width: 45px;
+        border-radius: 5px;
+
+    }
+
+
+
+    .services-container .box h2 {
+
+        font-size: 18px;
+
+
+    }
+
+    .services-container .box h2 span {
+        font-size: 16px;
+    }
+
+    .services-container .box h3 {
+        padding: 10px;
+        padding-bottom: 0;
+        font-size: 18px;
+    }
+
+    .services-container .box a {
+        padding: 7px;
+        border-radius: 10px;
+    }
+
+    #ride {
+        margin-top: 100px;
+    }
+
+    /*book car*/
+    /*book car*/
+
+    .container {
+        padding-top: 50px;
+
+    }
+
+    .form-booking {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        width: 425px;
+        height: 310px;
+        color: white;
+        position: relative;
+        left: 100px;
+        top: 0px;
+
+    }
+
+    .form-booking h3 {
+        padding-top: 10px;
+        margin-bottom: 15px
+    }
+
+    form {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        column-gap: 80px;
+        justify-content: space-between;
+        position: relative;
+
+    }
+
+    .form-group label {
+        position: relative;
+        left: -13px;
+
+
+
+    }
+
+    input {
+        border: none;
+        outline: none;
+        background: silver;
+        width: 150px;
+        font-size: 16px;
+        height: 25px;
+        border-radius: 5px;
+        margin: 7px 0px;
+
+
+    }
+
+    /*report*/
+    /*report*/
+
+    .content-container {
+        display: grid;
+        grid-template-columns: auto auto;
+
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+
+    .address {
+        width: 260px;
+        margin-left: 20px;
+    }
+
+    .address h3 {
+        font-size: 18px;
+    }
+
+    .address address {
+        font-size: 15px;
+    }
+
+    .address .icons {
+        margin-top: 30px;
+        word-spacing: 15px;
+        padding-right: 25px;
+        margin-left: 20px;
+    }
+
+    .address .icons .fa-brands {
+        font-size: 25px;
+        color: var(--main-color);
+        cursor: pointer;
+
+    }
+
+    .address .icons .fa-brands:hover {
+        cursor: pointer;
+        color: blue;
+    }
+
+    /*form*/
+    .report-form {
+        width: 300px;
+        height: 420px;
+
+    }
+
+    .report-form form label {
+        margin: 5px 0px;
+    }
+
+    .report-form form input {
+        width: 270px;
+        height: 35px;
+    }
+
+}
+
+/*530*/
+@media(max-width:590px) {
+    #menu-icon {
+        text-align: center;
+        font-size: 35px;
+        margin-top: 13px;
+
+
+        display: initial;
+    }
+
+    .navbar .active {
+        top: 7%;
+    }
+
+    header .navbar-menu {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        z-index: 200;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px var(--text-color);
+        transition: 0.2s ease;
+    }
+
+    .navbar a {
+        padding: 10px;
+        border-left: 2px solid var(--main-color);
+        margin: 1rem;
+        display: flex;
+    }
+
+    .navbar-menu a::after {
+        display: none;
+    }
+
+    .navbar-menu a:hover {
+        color: #fff;
+        background: var(--main-color);
+        border: none;
+        border-radius: 5px;
+    }
+
+    #home {
+        grid-template-columns: 1fr;
+    }
+
+    .message {
+        width: 100px;
+
+    }
+
+    /*book car*/
+    /*book car*/
+
+    .container {
+        padding-top: 50px;
+    }
+
+    .form-booking {
+        width: 420px;
+        height: 320px;
+        position: relative;
+        left: 40px;
+        top: 0px;
+
+    }
+
+
+    .form-group label {
+        position: relative;
+        left: -13px;
+        font-size: 15px;
+
+
+    }
+
+    input {
+        border: none;
+        outline: none;
+        background: silver;
+        width: 120px;
+        font-size: 15px;
+
+    }
+
+    /*report*/
+    /*report*/
+    #report {
+        background: black;
+        color: white;
+        width: auto;
+        height: 800px;
+        overflow: hidden;
+    }
+
+    .content-container {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+
+    .address {
+        width: 300px;
+        margin-left: 20px;
+        height: 300px;
+    }
+
+    .address h3 {
+        font-size: 20px;
+    }
+
+    .address address {
+        font-size: 16px;
+    }
+
+    .address .icons {
+        margin-top: 30px;
+        word-spacing: 15px;
+        padding-right: 25px;
+        margin-left: 20px;
+    }
+
+    .address .icons .fa-brands {
+        font-size: 25px;
+        color: var(--main-color);
+        cursor: pointer;
+
+    }
+
+    .address .icons .fa-brands:hover {
+        cursor: pointer;
+        color: blue;
+    }
+
+    /*form*/
+    .report-form {
+        width: 400px;
+        height: 420px;
+
+        overflow-y: hidden;
+    }
+
+    .report-form form label {
+        margin: 5px 0px;
+    }
+
+    .report-form form input {
+        width: 350px;
+        height: 35px;
+    }
+
+
+}
+
+.main .text p {
+    font-size: 13px;
+    font-weight: 400;
+
+
+}
+
+/*515*/
+@media(max-width:516px) {
+    .main-form {
+        display: grid;
+        grid-template-columns: 200px;
+        justify-content: center;
+        position: absolute;
+        background: var(--gradient);
+        top: 68%;
+        left: 15%;
+        padding: 7px 20px;
+
+    }
+
+    .main-form .btn {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 400px;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+
+    .reviews-container {
+        display: grid;
+        grid-template-columns: 400px;
+
+
+    }
+
+    .main .text h1 {
+        font-size: 35px;
+
+
+    }
+
+    .main .text h1 span {
+        color: var(--main-color);
+
+
+    }
+
+    .main .text p {
+        font-size: 11px;
+        padding: 10px;
+        font-weight: 400;
+        padding-left: 0;
+
+    }
+
+    .services-container .box {
+        width: 300px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+
+    }
+
+    .services-container .box .box-image {
+        width: 280px;
+        height: 200px;
+        padding-left: 5px;
+    }
+
+    .services-container .box a {
+
+        margin-bottom: 10px;
+
+    }
+
+    .main .text h1 {
+        font-size: 30px;
+
+
+    }
+
+    .main .text p {
+        font-size: 11px;
+        font-weight: 400;
+
+
+    }
+
+    .main .text {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        transform: translateY(-45%);
+
+    }
+
+    .main .text img {
+        width: 90px;
+        height: 30px;
+    }
+
+    .about-container img {
+        width: 390px;
+        height: 290px;
+    }
+
+    .message {
+        width: 100px;
+
+    }
+
+    /*book car*/
+    /*book car*/
+
+    .container {
+        padding-top: 50px;
+        height: 650px;
+    }
+
+    .form-booking {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        width: 300px;
+        height: 570px;
+        color: white;
+        position: relative;
+        left: 50px;
+        top: 0px;
+
+    }
+
+    .form-booking h3 {
+        padding-top: 10px;
+        margin-bottom: 15px
+    }
+
+    form {
+        display: inline-grid;
+        grid-template-columns: auto;
+        justify-content: space-between;
+        position: relative;
+
+    }
+
+    .form-group label {
+        position: relative;
+        left: -8px;
+
+
+
+    }
+
+    input {
+        border: none;
+        outline: none;
+        background: silver;
+        width: 150px;
+        font-size: 15px;
+        height: 30px;
+        border-radius: 5px;
+        margin: 12px 0px;
+    }
+
+    /* form report */
+    /* form report */
+    /* form report */
+    /* form report */
+    #report {
+        background: black;
+        color: white;
+        width: auto;
+        height: 800px;
+        overflow: hidden;
+    }
+
+    .content-container {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        padding-top: 50px;
+    }
+
+    .address {
+        width: 300px;
+        height: 300px;
+    }
+
+    .address h3 {
+        word-spacing: 5px;
+        font-size: 20px;
+    }
+
+    .address address {
+        margin-top: 40px;
+        word-spacing: 5px;
+        font-size: 16px;
+
+    }
+
+    .address .icons {
+        margin-top: 30px;
+        word-spacing: 15px;
+        padding-right: 25px;
+    }
+
+    .address .icons .fa-brands {
+        font-size: 25px;
+        color: var(--main-color);
+        cursor: pointer;
+
+    }
+
+    .address .icons .fa-brands:hover {
+        cursor: pointer;
+        color: blue;
+    }
+
+    /*form*/
+    .report-form {
+        width: 400px;
+        height: 420px;
+        border-radius: 10px;
+        padding: 15px;
+        padding-left: 20px;
+
+    }
+
+    .report-form form label {
+        margin: 3px 0px;
+        color: white;
+    }
+
+    .report-form form input {
+        width: 350px;
+        height: 30px;
+        margin-top: -15px;
+        font-size: 17px;
+        background: white;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+    .report-form form input:focus {
+        border: none;
+        outline: none;
+        box-shadow: 5px 5px solid var(--main-color);
+    }
+
+    .report-form form textarea {
+        margin-top: -15px;
+        font-size: 17px;
+    }
+
+    .report-form form #submit {
+        color: black;
+        background-color: white;
+        margin-top: -10px !important;
+        height: 40px;
+        font-size: 18px;
+        border: none;
+        outline: None;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+
+}
+
+@media(max-width:400px) {
+    #newsletter .newsletter-container a {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .message {
+        width: 100px;
+
+    }
+
+    /*book car*/
+    /*book car*/
+
+    .container {
+        padding-top: 50px;
+        height: 650px;
+    }
+
+    .form-booking {
+        width: 260px;
+        height: 580px;
+        left: 30px;
+        top: 0px;
+
+    }
+
+    .form-booking h3 {
+        padding-top: 10px;
+        margin-bottom: 15px
+    }
+
+    form {
+        grid-template-columns: auto;
+        overflow-y: hidden;
+
+    }
+
+    .form-group label {
+        position: relative;
+        left: -8px;
+
+
+
+    }
+
+    input {
+        border: none;
+        outline: none;
+        background: silver;
+        width: 150px;
+        font-size: 15px;
+        height: 30px;
+        border-radius: 5px;
+        margin: 12px 0px;
+
+
+    }
+
+
+    /* form report */
+    #report {
+        background: black;
+        color: white;
+        width: auto;
+        height: 800px;
+        overflow: hidden;
+    }
+
+    .content-container {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        padding-top: 50px;
+    }
+
+    .address {
+        width: 300px;
+        height: 300px;
+    }
+
+    .address h3 {
+        word-spacing: 5px;
+        font-size: 20px;
+    }
+
+    .address address {
+        margin-top: 40px;
+        word-spacing: 5px;
+        font-size: 16px;
+
+    }
+
+    .address .icons {
+        margin-top: 30px;
+        word-spacing: 15px;
+        padding-right: 25px;
+    }
+
+    .address .icons .fa-brands {
+        font-size: 25px;
+        color: var(--main-color);
+        cursor: pointer;
+
+    }
+
+    .address .icons .fa-brands:hover {
+        cursor: pointer;
+        color: blue;
+    }
+
+    /*form*/
+    .report-form {
+        width: 325px;
+        height: 445px;
+        border-radius: 10px;
+        padding: 15px;
+        padding-left: 20px;
+
+    }
+
+    .report-form form label {
+        margin: 3px 0px;
+        color: white;
+    }
+
+    .report-form form input {
+        width: 280px;
+        height: 40px !important;
+        margin-top: -15px;
+        font-size: 17px;
+        background: white;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+    .report-form form input:focus {
+        border: none;
+        outline: none;
+        box-shadow: 5px 5px solid var(--main-color);
+    }
+
+    .report-form form textarea {
+        margin-top: -15px;
+        font-size: 17px;
+    }
+
+    .report-form form #submit {
+        color: black;
+        background-color: white;
+        margin-top: -10px !important;
+        height: 40px;
+        font-size: 18px;
+        border: none;
+        outline: None;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+}
+
+
+/*390*/
+@media(max-width:390px) {
+
+
+    header .box .logout {
+        padding: 7px 20px !important;
+        background: rgb(46, 24, 146);
+        color: #fff;
+        border-radius: 10px;
+        overflow: hidden !important;
+    }
+
+    .about-container img {
+        width: 330px;
+        height: 280px;
+    }
+
+    .reviews-container {
+        display: grid;
+        grid-template-columns: 340px;
+
+
+    }
+
+    .services-container .box {
+        width: 300px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 300px;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+
+}
+
+/*350*/
+@media(max-width:360px) {
+    .about-container img {
+        width: 290px;
+        height: 290px;
+    }
+
+
+
+    .about-container .about-img {
+        width: 290px;
+        height: 290px;
+    }
+
+    .reviews-container {
+        display: grid;
+        grid-template-columns: 300px;
+
+
+    }
+
+    .message {
+        width: 100%;
+    }
+
+    .message h4 {
+        font-size: 14px;
+    }
+
+    .services-container .box {
+        width: 300px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 300px;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+
+    /*book car*/
+    /*book car*/
+
+    .container {
+        padding-top: 50px;
+        height: 650px;
+    }
+
+    .form-booking {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        width: 200px;
+        height: 580px;
+        color: white;
+        position: relative;
+        left: 30px;
+        top: 0px;
+
+    }
+
+    .form-booking h3 {
+        padding-top: 10px;
+        margin-bottom: 15px
+    }
+
+    form {
+        display: inline-grid;
+        grid-template-columns: auto;
+        justify-content: space-between;
+        position: relative;
+        overflow-y: hidden;
+    }
+
+    .form-group label {
+        position: relative;
+        left: -8px;
+
+
+
+    }
+
+    input {
+        border: none;
+        outline: none;
+        background: silver;
+        width: 150px;
+        font-size: 15px;
+        height: 30px;
+        border-radius: 5px;
+        margin: 12px 0px;
+
+
+    }
+
+    /* form report */
+    #report {
+        background: black;
+        color: white;
+        width: auto;
+        height: 800px;
+        overflow: hidden;
+    }
+
+    .content-container {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        padding-top: 50px;
+    }
+
+    .address {
+        width: 300px;
+        height: 300px;
+    }
+
+    .address h3 {
+        word-spacing: 5px;
+        font-size: 20px;
+    }
+
+    .address address {
+        margin-top: 40px;
+        word-spacing: 5px;
+        font-size: 16px;
+
+    }
+
+    .address .icons {
+        margin-top: 30px;
+        word-spacing: 15px;
+        padding-right: 25px;
+    }
+
+    .address .icons .fa-brands {
+        font-size: 25px;
+        color: var(--main-color);
+        cursor: pointer;
+
+    }
+
+    .address .icons .fa-brands:hover {
+        cursor: pointer;
+        color: blue;
+    }
+
+    /*form*/
+    .report-form {
+        width: 290px;
+        height: 445px;
+        border-radius: 10px;
+        padding: 15px;
+        margin-left: 10px;
+
+    }
+
+    .report-form form label {
+        margin: 3px 0px;
+        color: white;
+    }
+
+    .report-form form input {
+        width: 260px;
+        height: 40px !important;
+        margin-top: -15px;
+        font-size: 17px;
+        background: white;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+    .report-form form input:focus {
+        border: none;
+        outline: none;
+        box-shadow: 5px 5px solid var(--main-color);
+    }
+
+    .report-form form textarea {
+        margin-top: -15px;
+        font-size: 17px;
+    }
+
+    .report-form form #submit {
+        color: black;
+        background-color: white;
+        margin-top: -10px !important;
+        height: 40px;
+        font-size: 18px;
+        border: none;
+        outline: None;
+        margin-top: 30px;
+        text-align: center;
+    }
+}

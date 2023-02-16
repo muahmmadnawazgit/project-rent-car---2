@@ -1,0 +1,1 @@
+{"version":3,"sources":["authbook-car.js"],"names":["exports","book","req","res","send"],"mappings":";;AAAAA,OAAO,CAACC,IAAR,GAAa,UAACC,GAAD,EAAKC,GAAL,EAAW;AACpBA,EAAAA,GAAG,CAACC,IAAJ,CAAS,aAAT;AACH,CAFD","sourcesContent":["exports.book=(req,res)=>{\r\n    res.send('hello there')\r\n}"],"file":"authbook-car.dev.js"}

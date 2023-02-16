@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>rentcar</title>
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta accept-charset="UTF-8">
+    <link rel="stylesheet" href="/css/{{style}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <img class="img" src="../img/jeep.png">
+        <div class="navbar">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <ul class="navbar-menu">
+                <li><a href="/profile">Home</a></li>
+                <li><a href="/profile#Book-Car">Book a Ride</a></li>
+                <li><a href="/profile#about">about</a></li>
+                <li><a href="/profile#report">Report</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <a href="/logout" class="Sign-In" id="sign-in">logOut</a>
+        </div>
+
+    </header>
+
+
+    <!--Book-Car-->
+    <!--Book-Car-->
+    <!--Book-Car-->
+    <!--Book-Car-->
+
+
+    <section id="Book-Car">
+        {{#if message}}
+        <h4>
+            <alert>{{message}}</alert>
+        </h4>
+        {{/if}}
+        <div class="container">
+            <div class="form-booking">
+                <h3>Please fill this form</h3>
+
+                <form action="/update-Profolio" method="post" autocomplete="off" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="email">Registered Email</label><br>
+                        <input type="email" name="email" placeholder="someexample@gmail.com" autocomplete="on"><br>
+
+                        <label for="mobile">Mobile No:</label><br>
+                        <input type="tel" name="mobile" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+                            placeholder="1234-123-1234"><br>
+                        <h6>Format: 0123-456-7893</h6>
+                    </div>
+                    <div class="form-group">
+                        <label for="pick date">CNIC Front Image</label><br>
+                        <input type="file" name="fimage"><br>
+
+                        <label for="Return Date">CNIC back Image</label><br>
+                        <input type="file" name="bimage"><br>
+
+                        <input type="submit" value="submit" id="submit">
+                </form>
+
+            </div>
+            <div class="warning">
+                <h5>Note: Please Provide valid information.</h5>
+                <h6><span style="color:red">Warning: </span>If information provided By the user is found Wrong Your
+                    account will be deleted</h6>
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>

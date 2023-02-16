@@ -1,0 +1,826 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Red Hat Display', sans-serif;
+
+
+}
+
+:root {
+    --main-color: rgb(248, 105, 9);
+    --second-color: rgb(255, 153, 0);
+    --text-color: rgb(44, 41, 41);
+    --gradient: linear-gradient(to bottom right, rgb(248, 105, 9), rgb(255, 153, 0));
+}
+
+/*scroll bar*/
+/*scroll bar*/
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--main-color);
+}
+
+/*navbar*/
+
+header {
+    background: rgb(202, 199, 199);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 13px;
+    padding-top: 10px;
+
+}
+
+header .img {
+    width: 45px;
+    height: 40px;
+    margin-left: 7px;
+    padding-top: 7px;
+}
+
+#menu-icon {
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    display: none;
+}
+
+.navbar-menu {
+    display: flex;
+
+}
+
+.navbar-menu li {
+    position: relative;
+}
+
+.navbar-menu li a {
+    color: var(--text-color);
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.navbar .navbar-icon .bx {
+    font-size: 20px;
+
+}
+
+.navbar .navbar-menu a::after {
+    content: '';
+    background: var(--main-color);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-radius: 2px;
+    height: 3px;
+    width: 0;
+    transition: 0.5s;
+}
+
+.navbar .navbar-menu a:hover::after {
+    width: 100%;
+}
+
+
+header .box {
+    margin-right: 10px;
+    padding-top: 10px;
+    justify-content: center;
+    margin-top: 3px;
+
+
+}
+
+header .box .Sign-In {
+    padding: 7px 20px;
+    background: rgb(46, 24, 146);
+    color: #fff;
+    border-radius: 10px;
+
+}
+
+header .box .Sign-In:hover {
+    background: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+
+header .box .Sign-up {
+    color: var(--text-color);
+    padding: 7px 20px;
+
+}
+
+header .box .Sign-up:hover {
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    padding: 7px 20px;
+    border-radius: 13px;
+    cursor: pointer;
+
+
+
+}
+
+/*main*/
+.main {
+    background: url('../img/main.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/*message*/
+/*message*/
+/*message*/
+.message {
+    width: 550px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.message h4 {
+    background: var(--gradient);
+    color: white;
+    word-spacing: 4px;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.message a {
+    text-decoration: none;
+}
+
+/*registeration*/
+
+#form-signin {
+    position: relative;
+    left: 100px;
+    top: 80px;
+    width: 350px;
+    height: 280px;
+    background: var(--gradient);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#form-signin h3 {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#form-signin form {
+    padding: 10px;
+
+
+}
+
+#form-signin form label {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(19, 18, 18);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#form-signin form input {
+    font-size: 17px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    width: 300px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(233, 229, 229);
+}
+
+#form-signin form #submit {
+    font-size: 19px;
+    margin-top: 25px;
+    padding-right: 15px;
+    width: 300px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#form-signin form #submit:hover {
+    bacKground: rgb(46, 24, 146);
+    color: white;
+    cursor: pointer;
+}
+
+#form-signin form input:hover {
+    border: none;
+    outline: none;
+    box-shadow: 5px 2px var(--gradient);
+}
+
+
+
+
+
+/*@media*/
+
+
+@media(max-width:1023px) {
+    .main-form {
+        gap: 8px;
+        position: absolute;
+        top: 79%;
+        left: 5%;
+        padding: 15px 15px;
+
+    }
+
+    .main-form .box input {
+
+        padding: 7px 20px;
+        font-size: 16px;
+
+    }
+
+    header .box {
+        margin-right: 10px;
+        padding-top: 10px;
+        justify-content: center;
+        margin-top: 3px;
+
+
+    }
+
+    header .box .Sign-In {
+        padding: 7px 20px;
+        background: rgb(46, 24, 146);
+        color: #fff;
+        border-radius: 10px;
+
+    }
+
+    header .box .Sign-In:hover {
+        background: var(--main-color);
+        color: white;
+        cursor: pointer;
+    }
+
+    .main-form .btn .btn-submit {
+
+        font-size: 18px;
+
+
+    }
+}
+
+/*907*/
+@media(max-width:907px) {
+    .main-container {
+        gap: 10px;
+    }
+
+    .main .text h1 {
+        font-size: 40px;
+
+
+    }
+
+    .main .text p {
+        font-size: 15px;
+        font-weight: 501;
+
+
+    }
+
+    .main-container .content {
+
+        padding: 10px 20px;
+        margin: 40px 20px;
+
+    }
+
+    .main-container .content .bx {
+        font-size: 40px;
+        padding: 5px 5px;
+        margin: 5px;
+
+    }
+
+    .navbar-menu li a {
+
+
+        font-weight: 15px;
+
+    }
+
+}
+
+@media(max-width:710) {
+
+    /*registeration*/
+
+    #form-signin {
+        position: relative;
+        left: -100px;
+        top: 10px;
+        width: 350px;
+        height: 300px;
+    }
+
+    #form-signin form input {
+        font-size: 17px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        margin-right: 15px;
+        width: 300px;
+        height: 35px;
+
+    }
+
+    #form-signin form #submit {
+        font-size: 19px;
+        margin-top: 25px;
+        padding-right: 15px;
+        width: 300px;
+        height: 35px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    #form-signin form #submit:hover {
+        bacKground: rgb(46, 24, 146);
+        color: white;
+        cursor: pointer;
+    }
+
+    #form-signin form input:hover {
+        border: none;
+        outline: none;
+        box-shadow: 5px 2px var(--gradient);
+    }
+}
+
+
+/*771*/
+@media(max-width:771px) {
+    .main-form {
+        gap: 7px;
+        position: absolute;
+        top: 75%;
+        left: 3%;
+        padding: 10px 10px;
+
+    }
+
+    .main-form .box input {
+
+        padding: 7px 14px;
+        font-size: 16px;
+
+    }
+
+    .main-form .btn .btn-submit {
+
+        font-size: 17px;
+
+
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        margin-top: 20px;
+
+    }
+
+    .main-container {
+        gap: 10px;
+        row-gap: 5px;
+    }
+
+    .main .text h1 {
+        font-size: 35px;
+
+
+    }
+
+    .main .text p {
+        font-size: 15px;
+        font-weight: 700;
+
+
+    }
+
+    .main-container .content {
+
+        padding: 8px 17px;
+        margin: 40px 20px;
+
+    }
+
+    .main-container .content .bx {
+        font-size: 25px;
+        padding: 5px 5px;
+        margin: 3px;
+
+    }
+
+    .content h3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 600;
+        font-size: 22px;
+
+    }
+
+    .content p {
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    /*registeration*/
+
+    #form-signin {
+        position: relative;
+        left: 30px;
+        top: 80px;
+        width: 350px;
+        height: 300px;
+    }
+
+    #form-signin form input {
+        font-size: 17px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        margin-right: 15px;
+        width: 300px;
+        height: 35px;
+
+    }
+
+    #form-signin form #submit {
+        font-size: 19px;
+        margin-top: 25px;
+        padding-right: 15px;
+        width: 300px;
+        height: 35px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    #form-signin form #submit:hover {
+        bacKground: rgb(46, 24, 146);
+        color: white;
+        cursor: pointer;
+    }
+
+    #form-signin form input:hover {
+        border: none;
+        outline: none;
+        box-shadow: 5px 2px var(--gradient);
+    }
+
+
+
+
+
+}
+
+
+
+/*695*/
+@media(max-width:695px) {
+    header {
+        padding-bottom: 7px;
+        padding-top: 7px;
+
+    }
+
+    header .img {
+        width: 45px;
+        height: 40px;
+        margin-left: 7px;
+        padding-top: 7px;
+    }
+
+    .navbar-menu li a {
+        padding: 7px 10px;
+        font-size: 15px;
+
+    }
+
+    header .box {
+        padding-top: 2px;
+        margin-top: 0;
+
+
+    }
+
+    header .box .Sign-In {
+        padding: 7px 16px;
+        border-radius: 7px;
+        font-size: 14px;
+        margin-right: 15px;
+
+    }
+
+    header .box .Sign-up {
+        color: var(--text-color);
+        padding: 7px 16px;
+        font-size: 14px;
+    }
+
+    header .box .Sign-up:hover {
+        padding: 7px 16px;
+        border-radius: 7px;
+
+
+
+
+    }
+
+    .navbar .navbar-menu a::after {
+        content: '';
+        background-color: var(--main-color);
+        width: 0;
+        height: 2px;
+        border-radius: 2px;
+        bottom: -4px;
+        left: 0;
+        position: absolute;
+        transition: 0.5s;
+    }
+
+    .navbar-menu a:hover::after {
+        width: 100%;
+    }
+
+    /*message*/
+    /*message*/
+    .message {
+        width: 400px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .message h4 {
+        font-size: 17px;
+        padding: 7px;
+    }
+
+
+
+}
+
+/*530*/
+@media(max-width:590px) {
+    #menu-icon {
+        text-align: center;
+        font-size: 35px;
+        margin-top: 13px;
+
+
+        display: initial;
+    }
+
+    .navbar .active {
+        top: 7%;
+    }
+
+    header .navbar-menu {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        z-index: 200;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px var(--text-color);
+        transition: 0.2s ease;
+    }
+
+    .navbar a {
+        padding: 10px;
+        border-left: 2px solid var(--main-color);
+        margin: 1rem;
+        display: flex;
+    }
+
+    .navbar-menu a::after {
+        display: none;
+    }
+
+    .navbar-menu a:hover {
+        color: #fff;
+        background: var(--main-color);
+        border: none;
+        border-radius: 5px;
+    }
+
+    #home {
+        grid-template-columns: 1fr;
+    }
+
+    /*registeration*/
+
+    #form-signin {
+        position: relative;
+        left: 30px;
+        top: 80px;
+        width: 310px;
+        height: 300px;
+    }
+
+    #form-signin form input {
+        font-size: 17px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        margin-right: 15px;
+        width: 260px;
+        height: 35px;
+
+    }
+
+    #form-signin form #submit {
+        font-size: 19px;
+        margin-top: 25px;
+        padding-right: 15px;
+        width: 260px;
+        height: 35px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    #form-signin form #submit:hover {
+        bacKground: rgb(46, 24, 146);
+        color: white;
+        cursor: pointer;
+    }
+
+    #form-signin form input:hover {
+        border: none;
+        outline: none;
+        box-shadow: 5px 2px var(--gradient);
+    }
+
+
+}
+
+.main .text p {
+    font-size: 13px;
+    font-weight: 400;
+
+
+}
+
+/*515*/
+@media(max-width:515px) {}
+
+.services-container .box .box-image {
+    width: 280px;
+    height: 200px;
+    padding-left: 5px;
+}
+
+.services-container .box a {
+
+    margin-bottom: 10px;
+
+}
+
+.main .text h1 {
+    font-size: 30px;
+
+
+}
+
+.main .text p {
+    font-size: 11px;
+    font-weight: 400;
+
+
+}
+
+.main .text {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    transform: translateY(-45%);
+
+}
+
+.main .text img {
+    width: 90px;
+    height: 30px;
+}
+
+.about-container img {
+    width: 390px;
+    height: 290px;
+}
+
+
+@media(max-width:400px) {
+
+
+    .message {
+        width: 250px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .message h4 {
+        font-size: 16px;
+        padding: 7px;
+    }
+
+    /*registeration*/
+
+    #form-signin {
+        position: relative;
+        left: 30px;
+        top: 80px;
+        width: 280px;
+        height: 300px;
+    }
+
+    #form-signin form input {
+        font-size: 17px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        margin-right: 15px;
+        width: 230px;
+        height: 35px;
+
+    }
+
+    #form-signin form #submit {
+
+        width: 230px;
+        height: 35px;
+
+    }
+
+
+}
+
+@media(max-width:311px) {
+    /*registeration*/
+
+    #form-signin {
+        position: relative;
+        left: 10px;
+        top: 80px;
+        width: 280px;
+        height: 300px;
+    }
+
+    #form-signin form input {
+        font-size: 17px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        margin-right: 15px;
+        width: 230px;
+        height: 35px;
+
+    }
+
+    #form-signin form #submit {
+
+        width: 230px;
+        height: 35px;
+
+    }
+}

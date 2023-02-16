@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>rentcar</title>
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta accept-charset="UTF-8">
+    <link rel="stylesheet" href="/css/{{style}}">
+    <script src="https://kit.fontawesome.com/9e2c2f94d5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+</html>
+
+<body>
+    <header>
+        <img class="img" src="./img/jeep.png">
+        <div class="navbar">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <ul class="navbar-menu">
+                <li><a href="#Book-Car">Book a Ride</a></li>
+                <li><a href="/updateProfile/{{id}}">Update Profile</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#report">Report</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <a href="/logout" class="logout" id="logout">Logout</a>
+        </div>
+    </header>
+
+
+    <!--====Home====-->
+    <section id="home">
+        <div class="main">
+            <div class="message">
+                {{#if message}}
+                <h4>
+                    <alert>{{message}}</alert>
+                </h4>
+                {{/if}}
+            </div>
+            <div class="text">
+                <h1><span>Lets Book</span><br>a car for you.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Molestiae, non.</p>
+                <img src="./img/512x512.png">
+                <img src="./img/ios.png">
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+
+
+    <!---==ride-->
+    <!---==ride-->
+    <!---==ride-->
+    <!---==ride-->
+
+
+    <section id="ride">
+        <div id="header">
+            <h2> What we Offer</h2>
+        </div>
+        <div class="main-container">
+            <div class="content">
+                <i class='bx bxs-edit-location'></i>
+                <h3>Less Bugut</h3>
+                <p>Lorem ipsum dolor sit, hello adipisicing elit. Consequatur excepturi provident
+                    eveniet optio expedita error illum tempore harum temporibus
+                    facilis rem, quis animi similique laborum nulla iure recusandae sint quisquam!</p>
+            </div>
+
+            <div class="content">
+                <i class='bx bxs-calendar-check'></i>
+                <h3>Quick booking</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur excepturi provident
+                    eveniet optio expedita error illum tempore harum temporibus
+                    facilis rem, quis animi similique laborum nulla iure recusandae sint quisquam!</p>
+            </div>
+
+            <div class="content">
+                <i class='bx bxs-calendar-star'></i>
+                <h3>Guidence</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur excepturi provident
+                    eveniet optio expedita error illum tempore harum temporibus
+                    facilis rem, quis animi similique laborum nulla iure recusandae sint quisquam!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Book-Car-->
+    <!--Book-Car-->
+    <!--Book-Car-->
+    <!--Book-Car-->
+
+
+    <section id="Book-Car">
+        <h2>Book a Car</h2>
+        <div class="container">
+            <div class="form-booking">
+                <h3>Please fill this form</h3>
+                <form action="/book-car" method="post" autocomplete="off">
+                    <div class="form-group">
+                        <label for="location">Choose Your Location:</label><br>
+                        <input list="location" name="location" placeholder="Current Location"><br>
+                        <datalist id="location">
+                            <option value="Islamabad">
+                            <option value="Azad Kashmir">
+                            <option value="Lahore">
+                            <option value="Karachi">
+                            <option value="Hyderabad">
+
+
+                        </datalist>
+
+                        <label for="city">Choose Your City:</label><br>
+                        <input list="city" name="city" placeholder="Current City"><br>
+                        <datalist id="city">
+                            <option value="Alipur">
+                            <option value="tarlai">
+                            <option value="nazim abad">
+                            <option value="Islamabad">
+                            <option value="klahari">
+                            <option value="abotabad">
+                        </datalist>
+
+                        <label for="mobile">Mobile No:</label><br>
+                        <input type="tel" name="mobile" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required
+                            placeholder="Enter Valid Number"><br>
+                        <h6>Format:0333-682-7083</h6>
+                    </div>
+                    <div class="form-group">
+                        <label for="pick date">Pick Date:</label><br>
+                        <input type="date" name="pick"><br>
+
+                        <label for="Return Date">Return Date:</label><br>
+                        <input type="date" name="back"><br>
+
+                        <label for="Destination">Destination</label><br>
+                        <input list="destination" name="destination"><br>
+                        <datalist id="destination">
+                            <option value="Islamabad,alipur">
+                            <option value="Azad Kashmir,bahalpur">
+                            <option value="Lahore,khotli">
+                            <option value="Karachi,nazimabad">
+                            <option value="Alipur,islamabad">
+                            <option value="tarlai kalan">
+
+                        </datalist>
+
+                    </div>
+                    <input type="submit" value="submit" id="submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--about-->
+    <!--about-->
+    <!--about-->
+    <!--about-->
+
+
+    <section id="about">
+        <div class="header">
+            <p>About Us</p>
+            <h2>Best Customer Experience</h2>
+        </div>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="./img/about.png">
+            </div>
+            <div class="text">
+                <h4>About us</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci velit similique eveniet labore
+                    delectus aut provident facilis eaque explicabo eius?
+                    Porro numquam ratione doloribus minus quis quos consectetur cupiditate consequatur.</p>
+                <p id="p02">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores a quia ea obcaecati,
+                    maxime odio facilis vel id molestias omnis explicabo
+                    veniam commodi, repellat provident accusamus praesentium sed pariatur maiores.</p>
+                <div class="about-btn">
+                    <a href="/profile#Book-Car" type="button">Book a Car</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--report-->
+    <!--report-->
+    <!--report-->
+
+
+
+    <section id="report">
+        <div class="content-container">
+            <div class="address">
+                <h3>Nam ultrices ultrices nec <br>tortor pulvinar esteras <br>loremips est orem.</h3>
+                <address>
+                    address: New York,USA<br>
+                    phone: +9873647457893<br>
+                    Hours: 6:00 am – 2:00 am<br>
+                </address>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="report-form">
+                <form action="/auth/report" method="post">
+                    <label for="name">Email</label><br>
+                    <input type="email" name="email" placeholder="Enter your Real name"><br>
+                    <label for="subject">Subject</label><br>
+                    <input type="text" name="subject" placeholder="Enter your subject"><br>
+                    <label for="textarea">Message</label><br>
+                    <textarea type="text" name="textarea" placeholder="Enter your Message" col="10"
+                        rows="5"></textarea><br>
+                    <input type="submit" value="submit" id="submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
